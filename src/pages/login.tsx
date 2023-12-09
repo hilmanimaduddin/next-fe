@@ -1,5 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 export default function Login() {
   const [form, setForm] = React.useState({
@@ -100,12 +101,11 @@ export default function Login() {
               >
                 Login
               </button>
-              <a
-                href="/register"
-                className="text-decoration-none text-danger text-center"
-              >
-                Register Now
-              </a>
+              <Link href="/register">
+                <p className="text-decoration-none text-danger text-center">
+                  Register Now
+                </p>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import moment from "moment";
 import data from "../../public/fakedata.json";
+import Link from "next/link";
 
 export default function Home() {
   const date = new Date();
@@ -11,9 +12,11 @@ export default function Home() {
           className="container-fluid d-flex flex-nowrap w-100 align-items-center justify-content-between gap-3"
           style={{ zIndex: 1 }}
         >
-          <a className="navbar-brand" href="#">
-            <img src="/box.svg" alt="" />
-          </a>
+          <Link href={"#"}>
+            <div className="navbar-brand">
+              <img src="/box.svg" alt="" />
+            </div>
+          </Link>
           <input
             className="form-control"
             type="text"

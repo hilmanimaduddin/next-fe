@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function Register() {
@@ -63,12 +64,11 @@ export default function Register() {
             </div>
             <div className="d-grid">
               <button className="btn btn-danger rounded-pill">Register</button>
-              <a
-                href="/login"
-                className="text-decoration-none text-danger text-center"
-              >
-                Already have an account? Login
-              </a>
+              <Link href="/login">
+                <p className="text-decoration-none text-danger text-center">
+                  Already have an account? Login
+                </p>
+              </Link>
             </div>
           </div>
         </div>
