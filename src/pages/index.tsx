@@ -41,9 +41,9 @@ export default function Home() {
             <img src="/menu.svg" alt="" />
             <img src="/sales.svg" alt="" />
           </div>
-          <a href="/login">
+          <Link href={"/login"}>
             <img src="/logout.svg" alt="" />
-          </a>
+          </Link>
         </div>
         <div className="row g-0">
           <div
